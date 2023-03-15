@@ -230,7 +230,7 @@ def run(email, user, addr) -> str:
         driver.find_element(By.ID, 'CustomNext').click()
         time.sleep(5)
 
-        grmtr_transferringtocsnhighschool_name = wait_util(driver,By.ID,'grmtr_transferringtocsnhighschool_name',20)
+        grmtr_transferringtocsnhighschool_name = wait_util(driver, By.ID, 'grmtr_transferringtocsnhighschool_name', 20)
         grmtr_transferringtocsnhighschool = driver.find_element(By.ID, "grmtr_transferringtocsnhighschool")
         grmtr_transferringtocsnhighschool_entityname = driver.find_element(By.ID,
                                                                            "grmtr_transferringtocsnhighschool_entityname")
@@ -273,7 +273,6 @@ def run(email, user, addr) -> str:
         return 'ERROR'
     finally:
         driver.close()
-
 
 
 if __name__ == '__main__':
